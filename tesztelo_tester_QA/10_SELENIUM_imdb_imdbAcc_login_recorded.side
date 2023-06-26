@@ -1,0 +1,147 @@
+{
+  "id": "eb4f88bc-f5e6-435c-807b-956889057e71",
+  "version": "2.0",
+  "name": "imdb_login",
+  "url": "https://www.imdb.com",
+  "tests": [{
+    "id": "9dc0b611-de09-4a53-a05a-397826ce676e",
+    "name": "imdblogin",
+    "commands": [{
+      "id": "c62c4c13-a3f8-4245-ae74-d3283f928f58",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff2577bb-de8f-4629-83ae-0339c5788834",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "972x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64e06405-4cf4-4e78-b39d-fd6babf234ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.imdb-header__signin-text > .ipc-button__text",
+      "targets": [
+        ["css=.imdb-header__signin-text > .ipc-button__text", "css:finder"],
+        ["xpath=//nav[@id='imdbHeader']/div[2]/div[5]/a/div", "xpath:idRelative"],
+        ["xpath=//div[5]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3481e226-08b8-4a1d-947a-3a912914f10b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.list-group > .list-group-item:nth-child(1) > .auth-provider-text",
+      "targets": [
+        ["css=.list-group > .list-group-item:nth-child(1) > .auth-provider-text", "css:finder"],
+        ["xpath=//div[@id='signin-options']/div/div/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Sign in with IMDb')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa098ea6-6c73-40a3-8bb4-1563c9a46ac9",
+      "comment": "",
+      "command": "click",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b33ec41a-5f64-4b38-97b7-d24479f6dbd6",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "19930117.ea@gmail.com"
+    }, {
+      "id": "5f3c76cc-b42e-4a6f-85d5-021bd0256613",
+      "comment": "",
+      "command": "click",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7ef91ef-b753-43ab-8d26-8d59a17a70f2",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "REN49pul?"
+    }, {
+      "id": "a1aaac50-5e54-4ced-8be9-b1cb8f697144",
+      "comment": "",
+      "command": "click",
+      "target": "id=signInSubmit",
+      "targets": [
+        ["id=signInSubmit", "id"],
+        ["css=#signInSubmit", "css:finder"],
+        ["xpath=//input[@id='signInSubmit']", "xpath:attributes"],
+        ["xpath=//span[@id='a-autoid-0']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec4222fc-daa9-4e49-b91b-141c42ea0700",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ipc-button__text:nth-child(2) > #iconContext-arrow-drop-down",
+      "targets": [
+        ["css=.ipc-button__text:nth-child(2) > #iconContext-arrow-drop-down", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "782f60d3-cf2e-4ef8-965b-b77f0cd64520",
+      "comment": "",
+      "command": "click",
+      "target": "css=.imdb-header-account-menu__sign-out > .ipc-list-item__text",
+      "targets": [
+        ["css=.imdb-header-account-menu__sign-out > .ipc-list-item__text", "css:finder"],
+        ["xpath=//span[@id='navUserMenu-contents']/ul/a[6]/span", "xpath:idRelative"],
+        ["xpath=//span/ul/a[6]/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "36d8fea5-882d-49f9-8a2a-653ab855f796",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9dc0b611-de09-4a53-a05a-397826ce676e"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}

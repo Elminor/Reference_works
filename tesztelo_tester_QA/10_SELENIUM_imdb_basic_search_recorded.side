@@ -1,0 +1,99 @@
+{
+  "id": "1b12d88a-d394-42b2-a1cb-e59ef9eea0f0",
+  "version": "2.0",
+  "name": "imdb_basic_search",
+  "url": "https://www.imdb.com",
+  "tests": [{
+    "id": "59de7dc5-6da7-4c37-8204-0e2d89bb80b2",
+    "name": "imdb_basic_search",
+    "commands": [{
+      "id": "a9baea22-1e93-47a1-9e06-89ae86957dbb",
+      "comment": "",
+      "command": "open",
+      "target": "/?ref_=login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3394caa1-2152-45d1-ae71-1c7ac89b68be",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "972x672",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "466d697b-fbec-4dde-8f94-f1ed8e511987",
+      "comment": "",
+      "command": "click",
+      "target": "id=suggestion-search",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34c5b39d-8230-4ed7-8338-e00f9ca3718e",
+      "comment": "",
+      "command": "type",
+      "target": "id=suggestion-search",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "the menu 2022"
+    }, {
+      "id": "fa1e1f20-5443-4b57-abbe-010e229d211f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=suggestion-search",
+      "targets": [
+        ["id=suggestion-search", "id"],
+        ["name=q", "name"],
+        ["css=#suggestion-search", "css:finder"],
+        ["xpath=//input[@id='suggestion-search']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "696b6ab8-5897-4bbe-83f4-8387afd4af12",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=A menü",
+      "targets": [
+        ["linkText=A menü", "linkText"],
+        ["css=.ipc-metadata-list-summary-item:nth-child(1) .ipc-metadata-list-summary-item__t", "css:finder"],
+        ["xpath=//a[contains(text(),'A menü')]", "xpath:link"],
+        ["xpath=//div[@id='__next']/main/div[2]/div[3]/section/div/div/section[2]/div[2]/ul/li/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/title/tt9764362/?ref_=fn_al_tt_1')]", "xpath:href"],
+        ["xpath=//li/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'A menü')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b1fc089-cf30-4eb4-9dc7-3475a31f98f5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "95d5c6b4-6df8-45d3-9afe-fc61c4de5b7c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["59de7dc5-6da7-4c37-8204-0e2d89bb80b2"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}

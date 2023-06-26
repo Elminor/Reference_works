@@ -1,0 +1,2 @@
+ALTER TABLE todo
+ADD done BOOLEAN DEFAULT false; 
